@@ -1,77 +1,227 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Main Store Page</title>
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id="main-title">
-            Main store page
-        </h1>
-        <div id="nav-bar">
-            <input type="text" placeholder="Search for Product here">
-            <a href="#">
-                <img src="" alt="">
-                <h3>Techno Store</h3>
-            </a>
-            <a href="#">
-                <img src="Imgs/5166615.png" alt="">
-                <p>Cart</p>
-            </a>
-            <a href="#">
-                <p>Whitelist</p>
-            </a>
-            <a href="#"></a>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-store"></i>
+                    <span>Store Logo</span>
+                </div>
+                
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                
+                <div class="nav-icons">
+                    <button class="icon-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Cart</span>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="far fa-heart"></i>
+                        <span>Wishlist</span>
+                    </button>
+                    <button class="icon-btn">
+                        <i class="far fa-user"></i>
+                    </button>
+                </div>
+            </div>
         </div>
-        <div id="Discounts & sections">
-            <a href="#">
+    </header>
 
-            </a>
-            <a href="#">
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <h1 class="page-title">Main Store Page</h1>
 
-            </a>
-            <a href="#">
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-main">
+                    <div class="hero-content">
+                        <h2>Spring Sale</h2>
+                        <p class="hero-subtitle">Up to 50% Off</p>
+                        <button class="btn-primary">Shop Now</button>
+                    </div>
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&h=400&fit=crop" alt="Spring Sale">
+                    </div>
+                </div>
 
-            </a>
-            <a href="#">
+                <div class="hero-side">
+                    <div class="promo-card">
+                        <div class="promo-content">
+                            <h3>New Arrivals</h3>
+                            <a href="#" class="link-underline">Shop Collection</a>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=200&fit=crop" alt="New Arrivals">
+                    </div>
+                    
+                    <div class="promo-card">
+                        <div class="promo-content">
+                            <h3>Best Sellers</h3>
+                            <a href="#" class="link-underline">View More</a>
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300&h=200&fit=crop" alt="Best Sellers">
+                    </div>
+                </div>
+            </section>
 
-            </a>
-            <a href="#">
+            <!-- Categories -->
+            <section class="categories">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h4>Women</h4>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-shirt"></i>
+                    </div>
+                    <h4>Men</h4>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>Electronics</h4>
+                </div>
+                
+                <div class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-lamp"></i>
+                    </div>
+                    <h4>Home</h4>
+                </div>
+            </section>
 
-            </a>
-            <a href="#">
+            <!-- Featured Products -->
+            <section class="featured-products">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <a href="#" class="view-all">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
 
-            </a>
-            <a href="#">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=300&h=300&fit=crop" alt="Smartwatch">
+                        </div>
+                        <h3 class="product-title">Smartwatch</h3>
+                        <p class="product-price">$199.00</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
 
-            </a>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&h=300&fit=crop" alt="Running Shoes">
+                        </div>
+                        <h3 class="product-title">Running Shoes</h3>
+                        <p class="product-price">$89.00</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <span class="badge-sale">Sale</span>
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?w=300&h=300&fit=crop" alt="Wireless Earbuds">
+                        </div>
+                        <h3 class="product-title">Wireless Earbuds</h3>
+                        <p class="product-price">
+                            <span class="sale-badge">Sale</span>
+                            <span class="price-current">$59.00</span>
+                            <span class="price-original">$80.00</span>
+                        </p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=300&h=300&fit=crop" alt="Decorative Vase">
+                        </div>
+                        <h3 class="product-title">Decorative Vase</h3>
+                        <p class="product-price">$45.00</p>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trending Now -->
+            <section class="trending-section">
+                <h2>Trending Now</h2>
+                
+                <div class="trending-slider">
+                    <button class="slider-btn prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    
+                    <div class="trending-items">
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                        <div class="trending-card">
+                            <img src="https://images.unsplash.com/photo-1564422170194-896b89110ef8?w=200&h=200&fit=crop" alt="Trending Item">
+                        </div>
+                    </div>
+                    
+                    <button class="slider-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </section>
         </div>
-        <span>
-            <h2>Featured Products</h2>
-            <a href="#">View All</a>
-        </span>
-        <div id="Featured-Products">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-        <span>
-            <h2>Trending Now</h2>
-        </span>
-        <div>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-        </div>
-    </div>
-    <script src="script/script.js"></script>
+    </main>
 </body>
 </html>
